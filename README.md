@@ -2,7 +2,7 @@
 
 This is an XQuery application for searching the plays of Shakespeare.
 
-## Getting started
+## Getting started...
 
 After cloning this Git repository:
 
