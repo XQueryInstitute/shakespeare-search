@@ -28,7 +28,9 @@ declare %templates:wrap function app:browse-list-items($node as node(), $model a
     let $date := 
         if($play//tei:witness[@xml:id = 'shakespeare-online']) then $play//tei:witness[@xml:id = 'shakespeare-online'][1]/tei:date[1]/text() 
         else ()
-    let $death := count($play//tei:death)
+    (: the following XPath statement needs to be updated to account for 
+    other @when-X varaiables, but this should work for JC.xml :)
+    let $death := count($play//tei:death[not(contains(@when-custom, ':'))])
     let $play-uri := base-uri($play)
     let $uri := replace($play-uri,'/indexed-plays','/plays')
     order by 
