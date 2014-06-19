@@ -98,3 +98,4 @@ declare function config:app-info($node as node(), $model as map(*)) {
             </tr>
         </table>
 };
+(: Karin added a secret thing :)
