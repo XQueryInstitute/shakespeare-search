@@ -1,6 +1,6 @@
 # XQuery Institute Demo Application
 
-This is an XQuery application for searching the plays of Shakespeare.
+This is an XQuery application for searching the plays of Shakespeare. Tesgint making changes.
 
 ## Getting started
 
